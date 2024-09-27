@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.ArteDeco = void 0;
-// Implementação da classe ArteDeco
-class ArteDeco {
+exports.ModernoSofa = void 0;
+// Implementação da classe Moderno
+class ModernoSofa {
     constructor(material, cor, altura, largura) {
         this.material = material;
         this.cor = cor;
@@ -10,7 +10,7 @@ class ArteDeco {
         this.largura = largura;
     }
     exibirInfo(upperCase) {
-        let info = `Sofá ArteDeco - Material: ${this.material}, Cor: ${this.cor}, Altura: ${this.altura}, Largura: ${this.largura}`;
+        let info = `Sofá Moderno - Material: ${this.material}, Cor: ${this.cor}, Altura: ${this.altura}, Largura: ${this.largura}`;
         return upperCase ? info.toUpperCase() : info;
     }
     calcVolume() {
@@ -21,4 +21,4 @@ class ArteDeco {
         return this.exibirInfo(false);
     }
 }
-exports.ArteDeco = ArteDeco;
+exports.ModernoSofa = ModernoSofa;

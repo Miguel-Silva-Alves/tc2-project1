@@ -1,5 +1,5 @@
-// Implementação da classe Moderno
-export class Moderno implements Sofa {
+// Implementação da classe Victoriano
+export class VictorianoSofa implements Sofa {
     material: string;
     cor: string;
     altura: number;
@@ -13,9 +13,9 @@ export class Moderno implements Sofa {
     }
   
     exibirInfo(upperCase: boolean): string {
-      let info = `Sofá Moderno - Material: ${this.material}, Cor: ${this.cor}, Altura: ${this.altura}, Largura: ${this.largura}`;
-      return upperCase ? info.toUpperCase() : info;
-    }
+        let info = `Sofá Victoriano - Material: ${this.material}, Cor: ${this.cor}, Altura: ${this.altura}, Largura: ${this.largura}`;
+        return upperCase ? info.toUpperCase() : info;
+      }
   
     calcVolume(): number {
       return this.altura * this.largura;

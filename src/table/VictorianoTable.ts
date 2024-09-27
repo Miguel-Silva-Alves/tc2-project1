@@ -1,5 +1,5 @@
 // Implementação da classe Victoriano
-export class Victoriano implements Sofa {
+export class VictorianoTable implements Table {
     material: string;
     cor: string;
     altura: number;
@@ -11,18 +11,17 @@ export class Victoriano implements Sofa {
       this.altura = altura;
       this.largura = largura;
     }
-  
+    hasGlass(): boolean {
+        return this.material.toLowerCase().includes('glass')
+    }
+    setColor(color: string): string {
+        this.cor = color;
+        return this.cor;
+    }
+
     exibirInfo(upperCase: boolean): string {
-        let info = `Sofá Victoriano - Material: ${this.material}, Cor: ${this.cor}, Altura: ${this.altura}, Largura: ${this.largura}`;
+        let info = `Table Victoriano - Material: ${this.material}, Cor: ${this.cor}, Altura: ${this.altura}, Largura: ${this.largura}`;
         return upperCase ? info.toUpperCase() : info;
-      }
-  
-    calcVolume(): number {
-      return this.altura * this.largura;
     }
-  
-    pintar(novaCor: string): String {
-      this.cor = novaCor;
-      return this.exibirInfo(false);
-    }
-  }
+
+}

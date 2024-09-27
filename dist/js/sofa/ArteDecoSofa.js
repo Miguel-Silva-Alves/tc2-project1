@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Victoriano = void 0;
-// Implementação da classe Victoriano
-class Victoriano {
+exports.ArteDecoSofa = void 0;
+// Implementação da classe ArteDeco
+class ArteDecoSofa {
     constructor(material, cor, altura, largura) {
         this.material = material;
         this.cor = cor;
@@ -10,7 +10,7 @@ class Victoriano {
         this.largura = largura;
     }
     exibirInfo(upperCase) {
-        let info = `Sofá Victoriano - Material: ${this.material}, Cor: ${this.cor}, Altura: ${this.altura}, Largura: ${this.largura}`;
+        let info = `Sofá ArteDeco - Material: ${this.material}, Cor: ${this.cor}, Altura: ${this.altura}, Largura: ${this.largura}`;
         return upperCase ? info.toUpperCase() : info;
     }
     calcVolume() {
@@ -21,4 +21,4 @@ class Victoriano {
         return this.exibirInfo(false);
     }
 }
-exports.Victoriano = Victoriano;
+exports.ArteDecoSofa = ArteDecoSofa;
