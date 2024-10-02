@@ -10,7 +10,7 @@ class ModernoFurnitureFactory {
         return new ModernoChair_js_1.ModernoChair("Couro", "Branco", 100, 200, 4);
     }
     createSofa() {
-        return new ModernoSofa_js_1.ModernoSofa("Couro", "Branco", 100, 200); // Exemplo de criação de um sofá Art Deco
+        return new ModernoSofa_js_1.ModernoSofa("Couro", "Branco", 100, 200);
     }
     createTable() {
         return new ModernoTable_js_1.ModernoTable("Couro", "Branco", 100, 200);

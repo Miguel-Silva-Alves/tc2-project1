@@ -8,7 +8,7 @@ export class ModernoFurnitureFactory implements FurnitureFactory {
       return new ModernoChair("Couro", "Branco", 100, 200, 4);
     }
     createSofa(): Sofa {
-        return new ModernoSofa("Couro", "Branco", 100, 200); // Exemplo de criação de um sofá Art Deco
+        return new ModernoSofa("Couro", "Branco", 100, 200);
     }
     createTable(): Table {
       return new ModernoTable("Couro", "Branco", 100, 200);
