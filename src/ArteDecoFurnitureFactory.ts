@@ -4,14 +4,14 @@ import { ArteDecoTable } from "./table/ArteDecoTable.js";
  
  // Fábricas Concretas
 export class ArteDecoFurnitureFactory implements FurnitureFactory {
-    createChair(): Chair {
-      return new ArteDecoChair("Couro", "Branco", 100, 200, 4);
+    createChair(material: string, cor: string, altura: number, largura: number, legs: number): Chair {
+      return new ArteDecoChair(material, cor, altura, largura, legs);
     }
-    createSofa(): Sofa {
-        return new ArteDecoSofa("Couro", "Branco", 100, 200); // Exemplo de criação de um sofá Art Deco
+    createSofa(material: string, cor: string, altura: number, largura: number): Sofa {
+        return new ArteDecoSofa(material, cor, altura, largura);
     }
-    createTable(): Table {
-      return new ArteDecoTable("Couro", "Branco", 100, 200);
+    createTable(material: string, cor: string, altura: number, largura: number): Table {
+      return new ArteDecoTable(material, cor, altura, largura);
     }
 }
   

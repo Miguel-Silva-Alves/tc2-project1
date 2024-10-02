@@ -27,9 +27,9 @@ console.log(sofaVictoriano.exibirInfo(true));
 
  // Simulação
 function simulateFurniture(factory: FurnitureFactory) {
-    const chair = factory.createChair();
-    const sofa = factory.createSofa();
-    const Table = factory.createTable();
+    const chair = factory.createChair("couro", "branco", 200, 100, 4);
+    const sofa = factory.createSofa("couro", "branco", 200, 100);
+    const Table = factory.createTable("couro", "branco", 200, 100);
 
     console.log(chair.hasLegs());
     console.log(sofa.calcVolume());

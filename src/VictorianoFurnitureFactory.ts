@@ -4,14 +4,14 @@ import { VictorianoTable } from "./table/VictorianoTable.js";
  
  // Fábricas Concretas
 export class VictorianoFurnitureFactory implements FurnitureFactory {
-    createChair(): Chair {
-      return new VictorianoChair("Couro", "Branco", 100, 200, 4);
-    }
-    createSofa(): Sofa {
-        return new VictorianoSofa("Couro", "Branco", 100, 200);
-    }
-    createTable(): Table {
-      return new VictorianoTable("Couro", "Branco", 100, 200);
-    }
+  createChair(material: string, cor: string, altura: number, largura: number, legs: number): Chair {
+    return new VictorianoChair(material, cor, altura, largura, legs);
+  }
+  createSofa(material: string, cor: string, altura: number, largura: number): Sofa {
+      return new VictorianoSofa(material, cor, altura, largura);
+  }
+  createTable(material: string, cor: string, altura: number, largura: number): Table {
+    return new VictorianoTable(material, cor, altura, largura);
+  }
 }
   

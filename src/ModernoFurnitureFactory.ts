@@ -4,14 +4,14 @@ import { ModernoTable } from "./table/ModernoTable.js";
  
  // Fábricas Concretas
 export class ModernoFurnitureFactory implements FurnitureFactory {
-    createChair(): Chair {
-      return new ModernoChair("Couro", "Branco", 100, 200, 4);
+    createChair(material: string, cor: string, altura: number, largura: number, legs: number): Chair {
+      return new ModernoChair(material, cor, altura, largura, legs);
     }
-    createSofa(): Sofa {
-        return new ModernoSofa("Couro", "Branco", 100, 200);
+    createSofa(material: string, cor: string, altura: number, largura: number): Sofa {
+        return new ModernoSofa(material, cor, altura, largura);
     }
-    createTable(): Table {
-      return new ModernoTable("Couro", "Branco", 100, 200);
+    createTable(material: string, cor: string, altura: number, largura: number): Table {
+      return new ModernoTable(material, cor, altura, largura);
     }
 }
   
